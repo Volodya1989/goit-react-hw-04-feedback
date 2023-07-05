@@ -21,12 +21,23 @@ export const Button = styled.button`
   -webkit-user-select: none;
   touch-action: manipulation;
   white-space: nowrap;
+  &.good {
+       background: linear-gradient(to bottom right, #5AFF15, #00B712);
+    }
+  &.neutral {
+ background: linear-gradient(to bottom right, #FFDD00, #FBB034);   
+ }
+  &.bad {
+    background: linear-gradient(to bottom right, #F56545, #99201C);  
+    }
   &:not([disabled]):focus {
   box-shadow: 0 0 .15rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
 }
+
 &:not([disabled]):hover {
   box-shadow: 0 0 .15rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
 }
+
 }`;
 export const InlineButtons = styled.div`
   display: flex;
