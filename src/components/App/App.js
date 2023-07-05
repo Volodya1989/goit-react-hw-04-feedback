@@ -19,12 +19,15 @@ const App = () => {
       case "good":
         setGood(handleStateUpdate);
         break;
+      
       case "neutral":
         setNeutral(handleStateUpdate);
         break;
+      
       case "bad":
         setBad(handleStateUpdate);
         break;
+      
       default:
         return;
     }
